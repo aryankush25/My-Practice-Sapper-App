@@ -12,7 +12,6 @@
         return res.json()
       })
       .then(data => {
-        console.log('$$$$ data', data)
         return { loadedMeetups: { ...data, id: meetUpId } }
       })
       .catch(error => {
